@@ -1,9 +1,10 @@
 function loadMenu() {
-    const oldContent = document.getElementById('content');
-    if (oldContent) {
-        oldContent.remove();
-    }
-    console.log('Loaded Menu');
+    const content = document.createElement('div');
+    content.setAttribute('id', 'content');
+    content.classList.add('general');
+    content.textContent = 'Menu';
+
+    document.body.appendChild(content);
 }
 
 export { loadMenu };

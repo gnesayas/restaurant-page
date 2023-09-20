@@ -2,11 +2,6 @@ import FoodPic from './pexels-sydney-troxell-718742.jpg';
 import './style.css';
 
 function loadHome() {
-    const oldContent = document.getElementById('content');
-    if (oldContent) {
-        oldContent.remove();
-    }
-
     const content = document.createElement('div');
     content.setAttribute('id', 'content');
     content.classList.add('general');

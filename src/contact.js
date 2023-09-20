@@ -1,9 +1,10 @@
 function loadContact() {
-    const oldContent = document.getElementById('content');
-    if (oldContent) {
-        oldContent.remove();
-    }
-    console.log('Loaded Contact');
+    const content = document.createElement('div');
+    content.setAttribute('id', 'content');
+    content.classList.add('general');
+    content.textContent = 'Contact';
+
+    document.body.appendChild(content);
 }
 
 export { loadContact };
